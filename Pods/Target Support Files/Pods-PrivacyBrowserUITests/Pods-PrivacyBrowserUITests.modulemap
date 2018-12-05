@@ -1,0 +1,6 @@
+framework module Pods_PrivacyBrowserUITests {
+  umbrella header "Pods-PrivacyBrowserUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

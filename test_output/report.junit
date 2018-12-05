@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites name='PrivacyBrowserUITests.xctest' tests='41' failures='11'>
+  <testsuite name='PrivacyBrowserTests.AddressBarTests' tests='7' failures='0'>
+    <testcase classname='PrivacyBrowserTests.AddressBarTests' name='testWhenAddressBarStateIsIdleThenVerifyView' time='0.027'/>
+    <testcase classname='PrivacyBrowserTests.AddressBarTests' name='testWhenAddressBarStateIsPageLoadedThenVerifyView' time='0.026'/>
+    <testcase classname='PrivacyBrowserTests.AddressBarTests' name='testWhenAddressBarStateIsTypingThenVerifyView' time='0.026'/>
+    <testcase classname='PrivacyBrowserTests.AddressBarTests' name='testWhenReloadButtonIsTappedThenDelegateIsNotified' time='0.005'/>
+    <testcase classname='PrivacyBrowserTests.AddressBarTests' name='testWhenTextIsSubmittedThenDelegateIsNotified' time='0.004'/>
+    <testcase classname='PrivacyBrowserTests.AddressBarTests' name='testWhenTextIsTypedThenDelegateIsNotified' time='0.005'/>
+    <testcase classname='PrivacyBrowserTests.AddressBarTests' name='testWhenTrackerButtonIsTappedThenDelegateIsNotified' time='0.003'/>
+  </testsuite>
+  <testsuite name='PrivacyBrowserTests.DuckDuckGoSearchURLTests' tests='1' failures='0'>
+    <testcase classname='PrivacyBrowserTests.DuckDuckGoSearchURLTests' name='testWhenSearchIsGivenThenReturnsDuckDuckGoSearchURL' time='0.001'/>
+  </testsuite>
+  <testsuite name='PrivacyBrowserTests.NavigationBarTests' tests='5' failures='0'>
+    <testcase classname='PrivacyBrowserTests.NavigationBarTests' name='testWhenBackButtonIsTappedThenDelegateIsNotified' time='0.002'/>
+    <testcase classname='PrivacyBrowserTests.NavigationBarTests' name='testWhenCanGoBackAndCantGoForwardThenVerifyView' time='0.012'/>
+    <testcase classname='PrivacyBrowserTests.NavigationBarTests' name='testWhenCanGoBackAndForwardThenVerifyView' time='0.008'/>
+    <testcase classname='PrivacyBrowserTests.NavigationBarTests' name='testWhenCantGoBackAndForwardThenVerifyView' time='0.010'/>
+    <testcase classname='PrivacyBrowserTests.NavigationBarTests' name='testWhenForwardButtonIsTappedThenDelegateIsNotified' time='0.002'/>
+  </testsuite>
+  <testsuite name='PrivacyBrowserTests.SuggestionListTests' tests='2' failures='0'>
+    <testcase classname='PrivacyBrowserTests.SuggestionListTests' name='testWhenSuggestionIsSelectedThenDelegateIsNotified' time='0.009'/>
+    <testcase classname='PrivacyBrowserTests.SuggestionListTests' name='testWhenSuggestionListIsPopulatedThenVerifyView' time='0.024'/>
+  </testsuite>
+  <testsuite name='PrivacyBrowserTests.TrackerCountButtonTests' tests='1' failures='0'>
+    <testcase classname='PrivacyBrowserTests.TrackerCountButtonTests' name='testWhenTrackerButtonIsInitializedThenVerifyView' time='0.004'/>
+  </testsuite>
+  <testsuite name='PrivacyBrowserTests.TrackerCountFormatterTests' tests='3' failures='0'>
+    <testcase classname='PrivacyBrowserTests.TrackerCountFormatterTests' name='testWhenCountIsHigherThanMaxToDisplayThenReturnsMaxToDisplay' time='0.001'/>
+    <testcase classname='PrivacyBrowserTests.TrackerCountFormatterTests' name='testWhenCountIsLessThanMaxToDisplayThenReturnsCount' time='0.001'/>
+    <testcase classname='PrivacyBrowserTests.TrackerCountFormatterTests' name='testWhenCountIsNilThenReturnsQuestionMark' time='0.001'/>
+  </testsuite>
+  <testsuite name='PrivacyBrowserTests.TrackerDictionaryTests' tests='3' failures='0'>
+    <testcase classname='PrivacyBrowserTests.TrackerDictionaryTests' name='testWhenDuplicateTrackerIsAddedThenItShouldBeIgnored' time='0.001'/>
+    <testcase classname='PrivacyBrowserTests.TrackerDictionaryTests' name='testWhenEmptyThenShouldRetrieveAnEmptyList' time='0.001'/>
+    <testcase classname='PrivacyBrowserTests.TrackerDictionaryTests' name='testWhenTrackerIsAddedThenShouldRetrieveTrackerList' time='0.001'/>
+  </testsuite>
+  <testsuite name='PrivacyBrowserTests.UIColorHexTests' tests='1' failures='0'>
+    <testcase classname='PrivacyBrowserTests.UIColorHexTests' name='testWhenHexIsGivenThenInitsWithCorrespondingRGB' time='0.001'/>
+  </testsuite>
+  <testsuite name='PrivacyBrowserTests.URLFactoryTests' tests='3' failures='0'>
+    <testcase classname='PrivacyBrowserTests.URLFactoryTests' name='testWhenDomainIsGivenThenReturnsURL' time='0.006'/>
+    <testcase classname='PrivacyBrowserTests.URLFactoryTests' name='testWhenDomainOrURLIsNotGivenThenReturnsDuckDuckGoSearchURL' time='0.001'/>
+    <testcase classname='PrivacyBrowserTests.URLFactoryTests' name='testWhenURLIsGivenThenReturnsURL' time='0.001'/>
+  </testsuite>
+  <testsuite name='PrivacyBrowserTests.URLUtilTests' tests='3' failures='0'>
+    <testcase classname='PrivacyBrowserTests.URLUtilTests' name='testWhenTextIsGivenThenReturnsURLEncodedText' time='0.001'/>
+    <testcase classname='PrivacyBrowserTests.URLUtilTests' name='testWhenURLIsGivenThenReturnsTrue' time='0.001'/>
+    <testcase classname='PrivacyBrowserTests.URLUtilTests' name='testWhenURLIsNotGivenThenReturnsFalse' time='0.001'/>
+  </testsuite>
+  <testsuite name='PrivacyBrowserTests.WebViewTests' tests='11' failures='10'>
+    <testcase classname='PrivacyBrowserTests.WebViewTests' name='testWhenWebPageIsFailedToLoadThenDelegateIsNotified' time='1.127'/>
+    <testcase classname='PrivacyBrowserTests.WebViewTests' name='testWhenWebPageIsLoadedThenDelegateIsNotified'>
+      <failure message='Asynchronous wait failed: Exceeded timeout of 5 seconds, with unfulfilled expectations: &quot;Web view notifies the delegate after the page is loaded.&quot;.'>&lt;unknown&gt;:0</failure>
+    </testcase>
+    <testcase classname='PrivacyBrowserTests.WebViewTests' name='testWhenWebPageIsLoadedThenDelegateIsNotified'>
+      <failure message='XCTAssertNil failed: &quot;Error Domain=com.apple.XCTestErrorDomain Code=0 &quot;(null)&quot;&quot; - '>PrivacyBrowser/Browser/Tracker Blocker/Web View/WebViewTests.swift:63</failure>
+    </testcase>
+    <testcase classname='PrivacyBrowserTests.WebViewTests' name='testWhenWebPageWithNoTrackersIsLoadedThenNoTrackersAreFound'>
+      <failure message='Asynchronous wait failed: Exceeded timeout of 5 seconds, with unfulfilled expectations: &quot;Web view does not notify the delegate regarding any detected trackers.&quot;.'>&lt;unknown&gt;:0</failure>
+    </testcase>
+    <testcase classname='PrivacyBrowserTests.WebViewTests' name='testWhenWebPageWithNoTrackersIsLoadedThenNoTrackersAreFound'>
+      <failure message='XCTAssertNil failed: &quot;Error Domain=com.apple.XCTestErrorDomain Code=0 &quot;(null)&quot;&quot; - '>PrivacyBrowser/Browser/Tracker Blocker/Web View/WebViewTests.swift:75</failure>
+    </testcase>
+    <testcase classname='PrivacyBrowserTests.WebViewTests' name='testWhenWebPageWithThreeTrackersIsLoadedThenThreeTrackersAreFound'>
+      <failure message='Asynchronous wait failed: Exceeded timeout of 5 seconds, with unfulfilled expectations: &quot;Web view notifies the delegate after all three trackers are detected.&quot;.'>&lt;unknown&gt;:0</failure>
+    </testcase>
+    <testcase classname='PrivacyBrowserTests.WebViewTests' name='testWhenWebPageWithThreeTrackersIsLoadedThenThreeTrackersAreFound'>
+      <failure message='XCTAssertNil failed: &quot;Error Domain=com.apple.XCTestErrorDomain Code=0 &quot;(null)&quot;&quot; - '>PrivacyBrowser/Browser/Tracker Blocker/Web View/WebViewTests.swift:107</failure>
+    </testcase>
+    <testcase classname='PrivacyBrowserTests.WebViewTests' name='testWhenWebPageWithThreeTrackersIsLoadedThenThreeTrackersAreFound'>
+      <failure message='XCTAssertEqual failed: (&quot;0&quot;) is not equal to (&quot;3&quot;) - '>PrivacyBrowser/Browser/Tracker Blocker/Web View/WebViewTests.swift:108</failure>
+    </testcase>
+    <testcase classname='PrivacyBrowserTests.WebViewTests' name='testWhenWebPageWithTwoTrackersIsLoadedThenTwoTrackersAreFound'>
+      <failure message='Asynchronous wait failed: Exceeded timeout of 5 seconds, with unfulfilled expectations: &quot;Web view notifies the delegate after all two trackers are detected.&quot;.'>&lt;unknown&gt;:0</failure>
+    </testcase>
+    <testcase classname='PrivacyBrowserTests.WebViewTests' name='testWhenWebPageWithTwoTrackersIsLoadedThenTwoTrackersAreFound'>
+      <failure message='XCTAssertNil failed: &quot;Error Domain=com.apple.XCTestErrorDomain Code=0 &quot;(null)&quot;&quot; - '>PrivacyBrowser/Browser/Tracker Blocker/Web View/WebViewTests.swift:91</failure>
+    </testcase>
+    <testcase classname='PrivacyBrowserTests.WebViewTests' name='testWhenWebPageWithTwoTrackersIsLoadedThenTwoTrackersAreFound'>
+      <failure message='XCTAssertEqual failed: (&quot;0&quot;) is not equal to (&quot;2&quot;) - '>PrivacyBrowser/Browser/Tracker Blocker/Web View/WebViewTests.swift:92</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name='PrivacyBrowserUITests.UITests' tests='1' failures='1'>
+    <testcase classname='PrivacyBrowserUITests.UITests' name='test'>
+      <failure message='Asynchronous wait failed: Exceeded timeout of 5 seconds, with unfulfilled expectations: &quot;Expect predicate `exists == 1` for object &quot;A Simple Sample Web Page&quot; StaticText&quot;.'>UITests.swift:72</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

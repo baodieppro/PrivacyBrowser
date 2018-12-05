@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="LineAwesome.ttf">
+            <string>LineAwesome</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NavigationBar" customModule="Eray_Cetiner_Privacy_Browser" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="qTS-Py-6a9" id="qP2-92-hu5"/>
+                <outlet property="forwardButton" destination="kNg-GP-t4C" id="vXM-Bq-ygf"/>
+                <outlet property="view" destination="iN0-l3-epB" id="opP-8d-7Bs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="VzS-kj-mOr">
+                    <rect key="frame" x="16" y="0.0" width="76" height="59"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTS-Py-6a9" userLabel="Back Button">
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="59"/>
+                            <accessibility key="accessibilityConfiguration" identifier="navigationBarBackButton"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="hUN-g5-mVv"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="LineAwesome" family="LineAwesome" pointSize="24"/>
+                            <state key="normal" title=""/>
+                            <state key="disabled">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="backButtonTapped" destination="-1" eventType="touchUpInside" id="oHz-HX-yYw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNg-GP-t4C" userLabel="Forward Button">
+                            <rect key="frame" x="46" y="0.0" width="30" height="59"/>
+                            <accessibility key="accessibilityConfiguration" identifier="navigationBarForwardButton"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="eJ6-M2-brp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="LineAwesome" family="LineAwesome" pointSize="24"/>
+                            <state key="normal" title=""/>
+                            <state key="disabled">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="forwardButtonTapped" destination="-1" eventType="touchUpInside" id="0Fj-T2-iBs"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VzS-kj-mOr" secondAttribute="bottom" id="7ir-Y2-FRG"/>
+                <constraint firstItem="VzS-kj-mOr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="T4a-tp-Wie"/>
+                <constraint firstItem="VzS-kj-mOr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="e9C-5D-wug"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="138.40000000000001" y="-120.98950524737631"/>
+        </view>
+    </objects>
+</document>

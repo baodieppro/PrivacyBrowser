@@ -1,0 +1,15 @@
+/*
+  Localizable.strings
+  PrivacyBrowser
+
+  Created by Eray Cetiner on 18.11.2018.
+  Copyright © 2018 Eray Cetiner. All rights reserved.
+*/
+
+"Back"="Back";
+"Cancel"="Cancel";
+"Error"="Error";
+
+"addressbar.textfield.placeholder"="Type URL or search";
+"network_error.generic_message"="We can't load the page right now.";
+"trackerlist.title"="%d Trackers Found";
