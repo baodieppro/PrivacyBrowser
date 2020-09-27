@@ -10,6 +10,6 @@
 "Cancel"="Cancel";
 "Error"="Error";
 
-"addressbar.textfield.placeholder"="Type URL or search";
+"addressbar.textfield.placeholder"="Search the web...";
 "network_error.generic_message"="We can't load the page right now.";
 "trackerlist.title"="%d Trackers Found";
