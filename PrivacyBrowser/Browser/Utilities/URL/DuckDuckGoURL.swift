@@ -7,11 +7,11 @@
 //
 
 struct DuckDuckGoURL {
-    static let base = "https://\(host)"
-    static let host = "duckduckgo.com"
+    static let base = "https://onbibi.com"
+    static let host = "https://duckduckgo.com"
     static let suggestionsPath = "/ac"
-    static let searchPath = "/"
+    static let searchPath = "/search"
     
     static let search = "\(base)\(searchPath)?q=%@"
-    static let suggestions = "\(base)\(suggestionsPath)?q=%@"
+    static let suggestions = "\(host)\(suggestionsPath)?q=%@"
 }
